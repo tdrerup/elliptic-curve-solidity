@@ -1,0 +1,55 @@
+{
+  "name": "elliptic-solidity",
+  "version": "1.0.0",
+  "description": "Elliptic curve implementation in solidity; includes secp256r1",
+  "main": "truffle.js",
+  "directories": {
+    "contracts": "contracts",
+    "migrations": "migrations",
+    "test": "test"
+  },
+  "scripts": {
+    "clean": "rm -Rf ./build",
+    "compile": "truffle compile",
+    "console": "truffle console",
+    "flatten": "mkdir -p build && truffle-flattener contracts/**/*.sol >> build/bundle.sol",
+    "lint": "eslint './**/*.js?(x)'",
+    "migrate": "truffle migrate",
+    "networks": "truffle networks",
+    "postpublish": "npm run clean",
+    "prepublish": "npm run compile",
+    "test": "npm run clean && truffle test"
+  },
+  "author": "tilman drerup",
+  "license": "MIT",
+  "keywords": [
+    "blockchain",
+    "contract",
+    "contracts",
+    "ecc",
+    "elliptic",
+    "eth",
+    "ethereum",
+    "secp256r1",
+    "smart",
+    "smart-contract",
+    "p256",
+    "prime256v1"
+  ],
+  "devDependencies": {
+    "bignumber.js": "^7.2.1",
+    "crypto": "^1.0.1",
+    "ec-pem": "^0.18.0",
+    "ethers": "^4.0.16",
+    "eslint": "^4.19.1",
+    "ethereumjs-util": "^5.2.0",
+    "ethjs-util": "^0.1.6",
+    "truffle": "^5.0.1",
+    "truffle-flattener": "^1.2.5",
+    "web3": "1.0.0-beta.34",
+    "web3-utils": "1.0.0-beta.34"
+  },
+  "dependencies": {
+    "solc": "^0.5.2"
+  }
+}
