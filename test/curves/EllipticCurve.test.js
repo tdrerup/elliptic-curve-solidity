@@ -25,20 +25,21 @@ contract('SECP256R1', async (accounts) => {
     var prime256v1 = crypto.createECDH('prime256v1');
     prime256v1.generateKeys();
 
+    // Reformat keys.
+    var pemFormattedKeyPair = ecPem(prime256v1, 'prime256v1');
+    publicKey = [
+      '0x' + prime256v1.getPublicKey('hex').slice(2, 66),
+      '0x' + prime256v1.getPublicKey('hex').slice(-64)
+    ];
+
     // Create random message and sha256-hash it.
     var message = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
     messageHash = ethereumJSUtil.bufferToHex(ethereumJSUtil.sha256(message));
 
-    // Create key pair.
-    var keyPair = {privateKey: prime256v1.getPrivateKey('hex'), publicKey: prime256v1.getPublicKey('hex')};
-    publicKey = ['0x' + keyPair.publicKey.slice(2, 66), '0x' + keyPair.publicKey.slice(-64)];
-
     // Create signature.
-    prime256v1.setPrivateKey(keyPair.privateKey, 'hex');
-    var pem = ecPem(prime256v1, 'prime256v1');
     var signer = crypto.createSign('RSA-SHA256');
     signer.update(message);
-    var sigString = signer.sign(pem.encodePrivateKey(), 'hex');
+    var sigString = signer.sign(pemFormattedKeyPair.encodePrivateKey(), 'hex');
 
     // Reformat signature / extract coordinates.
     var xlength = 2 * ('0x' + sigString.slice(6, 8));
