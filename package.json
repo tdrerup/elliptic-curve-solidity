@@ -2,6 +2,10 @@
   "name": "elliptic-solidity",
   "version": "1.0.0",
   "description": "Elliptic curve implementation in solidity; includes secp256r1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tdrerup/elliptic-curve-solidity.git"
+  },
   "main": "truffle.js",
   "directories": {
     "contracts": "contracts",
@@ -37,19 +41,19 @@
     "prime256v1"
   ],
   "devDependencies": {
-    "bignumber.js": "^7.2.1",
+    "bignumber.js": "^8.1.1",
     "crypto": "^1.0.1",
     "ec-pem": "^0.18.0",
-    "ethers": "^4.0.16",
-    "eslint": "^4.19.1",
-    "ethereumjs-util": "^5.2.0",
+    "ethers": "^4.0.27",
+    "eslint": "^5.15.1",
+    "ethereumjs-util": "^6.1.0",
     "ethjs-util": "^0.1.6",
-    "truffle": "^5.0.1",
-    "truffle-flattener": "^1.2.5",
+    "truffle": "^5.0.7",
+    "truffle-flattener": "^1.3.0",
     "web3": "1.0.0-beta.34",
     "web3-utils": "1.0.0-beta.34"
   },
   "dependencies": {
-    "solc": "^0.5.2"
+    "solc": "^0.5.5"
   }
 }
