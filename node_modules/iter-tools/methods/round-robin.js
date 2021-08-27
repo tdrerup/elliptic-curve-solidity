@@ -1,0 +1,1 @@
+module.exports = require('../impls/$round-robin/round-robin.js').roundRobin;

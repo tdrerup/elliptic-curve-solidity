@@ -1,0 +1,1 @@
+module.exports = require('../impls/not-async-iterable/not-async-iterable.js').notAsyncIterable;

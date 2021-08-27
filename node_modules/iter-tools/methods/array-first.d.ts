@@ -1,0 +1,1 @@
+export { arrayFirst as default } from '../impls/array-first/array-first';

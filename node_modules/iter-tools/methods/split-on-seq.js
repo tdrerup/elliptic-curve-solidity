@@ -1,0 +1,1 @@
+module.exports = require('../impls/$split-on-seq/split-on-seq.js').splitOnSeq;

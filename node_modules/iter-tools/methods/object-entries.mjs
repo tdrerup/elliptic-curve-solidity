@@ -1,0 +1,1 @@
+export { objectEntries as default } from '../impls/object-entries/object-entries.js';

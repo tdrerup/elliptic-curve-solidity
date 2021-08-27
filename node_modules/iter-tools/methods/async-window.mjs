@@ -1,0 +1,1 @@
+export { asyncWindow as default } from '../impls/$window/async-window.js';

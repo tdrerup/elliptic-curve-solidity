@@ -1,0 +1,1 @@
+module.exports = require('../impls/$join-with-seq/async-join-with-seq.js').__asyncJoinWithSeq;

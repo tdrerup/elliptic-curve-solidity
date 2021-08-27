@@ -1,0 +1,1 @@
+module.exports = require('../impls/array-from/array-from.js').arrayFrom;

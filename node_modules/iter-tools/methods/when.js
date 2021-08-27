@@ -1,0 +1,1 @@
+module.exports = require('../impls/when/when.js').when;

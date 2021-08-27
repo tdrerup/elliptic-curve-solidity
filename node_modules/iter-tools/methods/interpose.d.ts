@@ -1,0 +1,1 @@
+export { interpose as default } from '../impls/$interpose/interpose';

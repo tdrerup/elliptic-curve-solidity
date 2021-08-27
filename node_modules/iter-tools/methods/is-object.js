@@ -1,0 +1,1 @@
+module.exports = require('../impls/is-object/is-object.js').isObject;

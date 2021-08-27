@@ -1,0 +1,1 @@
+export { asyncZipAll as default } from '../impls/$zip-all/async-zip-all';

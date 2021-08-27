@@ -1,0 +1,1 @@
+export { flatMap as default } from '../impls/$flat-map/flat-map.js';

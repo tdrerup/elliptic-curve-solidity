@@ -1,0 +1,1 @@
+export { getSize as default } from '../impls/get-size/get-size.js';

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$take/async-take.js').__asyncTake;

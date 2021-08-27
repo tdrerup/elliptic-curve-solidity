@@ -1,0 +1,1 @@
+export { asyncBatch as default } from '../impls/$batch/async-batch';

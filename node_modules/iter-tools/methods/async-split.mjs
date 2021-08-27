@@ -1,0 +1,1 @@
+export { asyncSplit as default } from '../impls/$split/async-split.js';

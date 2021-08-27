@@ -1,0 +1,1 @@
+module.exports = require('../impls/$split-groups/split-groups.js').__splitGroups;

@@ -1,0 +1,1 @@
+export { fork as default } from '../impls/$fork/fork';

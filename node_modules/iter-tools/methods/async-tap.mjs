@@ -1,0 +1,1 @@
+export { asyncTap as default } from '../impls/$tap/async-tap.js';

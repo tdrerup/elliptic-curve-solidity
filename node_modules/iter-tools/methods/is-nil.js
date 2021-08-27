@@ -1,0 +1,1 @@
+module.exports = require('../impls/is-nil/is-nil.js').isNil;

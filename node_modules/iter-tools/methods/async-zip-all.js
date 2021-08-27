@@ -1,0 +1,1 @@
+module.exports = require('../impls/$zip-all/async-zip-all.js').asyncZipAll;

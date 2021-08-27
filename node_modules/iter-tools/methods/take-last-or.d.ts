@@ -1,0 +1,1 @@
+export { takeLastOr as default } from '../impls/$take-last-or/take-last-or';

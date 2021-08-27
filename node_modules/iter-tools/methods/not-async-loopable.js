@@ -1,0 +1,1 @@
+module.exports = require('../impls/not-async-loopable/not-async-loopable.js').notAsyncLoopable;

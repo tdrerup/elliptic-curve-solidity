@@ -1,0 +1,1 @@
+module.exports = require('../impls/$str/async-str.js').__asyncStr;

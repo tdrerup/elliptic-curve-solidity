@@ -1,0 +1,1 @@
+export { peekerate as default } from '../impls/$peekerate/peekerate';

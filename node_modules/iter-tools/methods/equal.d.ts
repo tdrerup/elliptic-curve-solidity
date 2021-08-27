@@ -1,0 +1,1 @@
+export { equal as default } from '../impls/$equal/equal';

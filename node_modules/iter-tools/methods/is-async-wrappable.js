@@ -1,0 +1,1 @@
+module.exports = require('../impls/is-async-wrappable/is-async-wrappable.js').isAsyncWrappable;

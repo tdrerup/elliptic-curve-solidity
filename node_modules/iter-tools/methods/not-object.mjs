@@ -1,0 +1,1 @@
+export { notObject as default } from '../impls/not-object/not-object.js';

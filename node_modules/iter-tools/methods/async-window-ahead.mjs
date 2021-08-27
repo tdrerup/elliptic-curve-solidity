@@ -1,0 +1,1 @@
+export { asyncWindowAhead as default } from '../impls/$window-ahead/async-window-ahead.js';

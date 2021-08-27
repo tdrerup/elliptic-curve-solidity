@@ -1,0 +1,1 @@
+export { spliterateGrouped as default } from '../impls/$spliterate-grouped/spliterate-grouped.js';

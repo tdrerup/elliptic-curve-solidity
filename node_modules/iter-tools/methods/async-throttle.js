@@ -1,0 +1,1 @@
+module.exports = require('../impls/async-throttle/async-throttle.js').asyncThrottle;

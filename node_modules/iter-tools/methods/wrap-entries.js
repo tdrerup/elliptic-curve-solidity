@@ -1,0 +1,1 @@
+module.exports = require('../impls/wrap-entries/wrap-entries.js').wrapEntries;

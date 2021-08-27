@@ -1,0 +1,1 @@
+exports.isLoopable = require('../is-iterable/is-iterable.js').isIterable;

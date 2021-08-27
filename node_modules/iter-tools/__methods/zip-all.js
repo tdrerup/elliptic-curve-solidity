@@ -1,0 +1,1 @@
+module.exports = require('../impls/$zip-all/zip-all.js').__zipAll;

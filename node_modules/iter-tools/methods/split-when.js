@@ -1,0 +1,1 @@
+module.exports = require('../impls/$split-when/split-when.js').splitWhen;

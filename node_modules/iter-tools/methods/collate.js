@@ -1,0 +1,1 @@
+module.exports = require('../impls/$collate/collate.js').collate;

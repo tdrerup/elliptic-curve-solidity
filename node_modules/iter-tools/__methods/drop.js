@@ -1,0 +1,1 @@
+module.exports = require('../impls/$drop/drop.js').__drop;

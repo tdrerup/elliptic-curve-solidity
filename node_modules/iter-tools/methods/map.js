@@ -1,0 +1,1 @@
+module.exports = require('../impls/$map/map.js').map;

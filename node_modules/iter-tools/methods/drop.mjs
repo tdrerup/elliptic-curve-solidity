@@ -1,0 +1,1 @@
+export { drop as default } from '../impls/$drop/drop.js';

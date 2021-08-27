@@ -1,0 +1,1 @@
+module.exports = require('../impls/$concat/concat.js').__concat;

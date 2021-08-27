@@ -1,0 +1,1 @@
+export { tap as default } from '../impls/$tap/tap.js';

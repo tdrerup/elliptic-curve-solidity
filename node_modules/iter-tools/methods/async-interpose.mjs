@@ -1,0 +1,1 @@
+export { asyncInterpose as default } from '../impls/$interpose/async-interpose.js';

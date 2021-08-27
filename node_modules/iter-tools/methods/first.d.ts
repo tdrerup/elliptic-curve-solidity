@@ -1,0 +1,1 @@
+export { first as default } from '../impls/$first/first';

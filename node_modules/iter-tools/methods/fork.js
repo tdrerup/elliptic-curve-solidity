@@ -1,0 +1,1 @@
+module.exports = require('../impls/$fork/fork.js').fork;

@@ -1,0 +1,1 @@
+export { notIterable as default } from '../impls/not-iterable/not-iterable';

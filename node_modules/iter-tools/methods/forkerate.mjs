@@ -1,0 +1,1 @@
+export { forkerate as default } from '../impls/$forkerate/forkerate.js';

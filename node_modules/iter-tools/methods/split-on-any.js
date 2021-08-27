@@ -1,0 +1,1 @@
+module.exports = require('../impls/$split-on-any/split-on-any.js').splitOnAny;

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$starts-with-seq/async-starts-with-seq.js').__asyncStartsWithSeq;

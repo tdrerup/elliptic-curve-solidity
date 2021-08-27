@@ -1,0 +1,1 @@
+module.exports = require('../impls/$to-array/to-array.js').toArray;

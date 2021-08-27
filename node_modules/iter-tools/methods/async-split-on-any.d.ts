@@ -1,0 +1,1 @@
+export { asyncSplitOnAny as default } from '../impls/$split-on-any/async-split-on-any';

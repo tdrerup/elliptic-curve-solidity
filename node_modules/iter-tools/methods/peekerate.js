@@ -1,0 +1,1 @@
+module.exports = require('../impls/$peekerate/peekerate.js').peekerate;

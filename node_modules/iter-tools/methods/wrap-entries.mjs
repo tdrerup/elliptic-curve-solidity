@@ -1,0 +1,1 @@
+export { wrapEntries as default } from '../impls/wrap-entries/wrap-entries.js';

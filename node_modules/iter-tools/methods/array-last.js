@@ -1,0 +1,1 @@
+module.exports = require('../impls/array-last/array-last.js').arrayLast;

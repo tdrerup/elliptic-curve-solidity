@@ -1,0 +1,1 @@
+export { takeSorted as default } from '../impls/$take-sorted/take-sorted';

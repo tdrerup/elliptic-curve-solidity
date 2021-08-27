@@ -1,0 +1,1 @@
+module.exports = require('../impls/$map/async-map.js').asyncMap;

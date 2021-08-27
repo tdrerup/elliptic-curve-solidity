@@ -1,0 +1,1 @@
+export { isLoopable as default } from '../impls/is-loopable/is-loopable';

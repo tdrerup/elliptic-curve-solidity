@@ -1,0 +1,1 @@
+export { windowAhead as default } from '../impls/$window-ahead/window-ahead.js';

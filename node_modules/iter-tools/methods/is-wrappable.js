@@ -1,0 +1,1 @@
+module.exports = require('../impls/is-wrappable/is-wrappable.js').isWrappable;

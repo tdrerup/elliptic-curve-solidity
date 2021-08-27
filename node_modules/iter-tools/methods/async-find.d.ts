@@ -1,0 +1,1 @@
+export { asyncFind as default } from '../impls/$find/async-find';

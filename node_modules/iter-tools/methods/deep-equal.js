@@ -1,0 +1,1 @@
+module.exports = require('../impls/$deep-equal/deep-equal.js').deepEqual;

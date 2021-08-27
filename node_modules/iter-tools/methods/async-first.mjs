@@ -1,0 +1,1 @@
+export { asyncFirst as default } from '../impls/$first/async-first.js';

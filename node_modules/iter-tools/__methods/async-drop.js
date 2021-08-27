@@ -1,0 +1,1 @@
+module.exports = require('../impls/$drop/async-drop.js').__asyncDrop;

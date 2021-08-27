@@ -1,0 +1,1 @@
+module.exports = require('../impls/$find/async-find.js').__asyncFind;

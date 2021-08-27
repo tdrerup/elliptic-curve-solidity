@@ -1,0 +1,12 @@
+import { MessageStatus, MessageRequest, SignedMessage, SnapConfig, MessageGasEstimate, FilecoinDenomination } from "@nodefactory/filsnap-types";
+import { MetamaskFilecoinSnap } from "./snap";
+export declare function getAddress(this: MetamaskFilecoinSnap): Promise<string>;
+export declare function getPublicKey(this: MetamaskFilecoinSnap): Promise<string>;
+export declare function getBalance(this: MetamaskFilecoinSnap, denomination: FilecoinDenomination): Promise<string>;
+export declare function exportPrivateKey(this: MetamaskFilecoinSnap): Promise<string>;
+export declare function configure(this: MetamaskFilecoinSnap, configuration: SnapConfig): Promise<void>;
+export declare function signMessage(this: MetamaskFilecoinSnap, message: MessageRequest): Promise<SignedMessage>;
+export declare function signMessageRaw(this: MetamaskFilecoinSnap, rawMessage: string): Promise<string>;
+export declare function sendMessage(this: MetamaskFilecoinSnap, signedMessage: SignedMessage): Promise<MessageStatus>;
+export declare function getMessages(this: MetamaskFilecoinSnap): Promise<MessageStatus[]>;
+export declare function calculateGasForMessage(this: MetamaskFilecoinSnap, message: MessageRequest): Promise<MessageGasEstimate>;

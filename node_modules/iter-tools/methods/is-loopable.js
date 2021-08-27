@@ -1,0 +1,1 @@
+module.exports = require('../impls/is-loopable/is-loopable.js').isLoopable;

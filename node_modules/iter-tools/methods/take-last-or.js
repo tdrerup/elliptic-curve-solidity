@@ -1,0 +1,1 @@
+module.exports = require('../impls/$take-last-or/take-last-or.js').takeLastOr;

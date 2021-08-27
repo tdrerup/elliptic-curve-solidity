@@ -1,0 +1,1 @@
+export { asyncSplitGroups as default } from '../impls/$split-groups/async-split-groups.js';

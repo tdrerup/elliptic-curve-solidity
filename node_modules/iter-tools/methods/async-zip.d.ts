@@ -1,0 +1,1 @@
+export { asyncZip as default } from '../impls/$zip/async-zip';

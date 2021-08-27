@@ -1,0 +1,1 @@
+module.exports = require('../impls/compose/compose.js').compose;

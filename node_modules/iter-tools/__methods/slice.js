@@ -1,0 +1,1 @@
+module.exports = require('../impls/$slice/slice.js').__sliceFromStart;

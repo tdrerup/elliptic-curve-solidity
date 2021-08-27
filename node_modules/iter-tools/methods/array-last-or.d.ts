@@ -1,0 +1,1 @@
+export { arrayLastOr as default } from '../impls/array-last-or/array-last-or';

@@ -1,0 +1,1 @@
+export { enumerate as default } from '../impls/$enumerate/enumerate.js';

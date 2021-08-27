@@ -1,0 +1,1 @@
+export { asyncSplitWhen as default } from '../impls/$split-when/async-split-when.js';

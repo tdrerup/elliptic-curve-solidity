@@ -1,0 +1,1 @@
+export { asyncInterleaveReady as default } from '../impls/async-interleave-ready/async-interleave-ready.js';

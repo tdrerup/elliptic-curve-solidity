@@ -1,0 +1,1 @@
+export { notAsyncIterable as default } from '../impls/not-async-iterable/not-async-iterable';

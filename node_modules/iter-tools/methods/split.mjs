@@ -1,0 +1,1 @@
+export { split as default } from '../impls/$split/split.js';

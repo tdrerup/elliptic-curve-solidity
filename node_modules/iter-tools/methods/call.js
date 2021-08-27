@@ -1,0 +1,1 @@
+module.exports = require('../impls/call/call.js').call;

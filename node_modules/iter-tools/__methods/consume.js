@@ -1,0 +1,1 @@
+module.exports = require('../impls/$consume/consume.js').__consume;

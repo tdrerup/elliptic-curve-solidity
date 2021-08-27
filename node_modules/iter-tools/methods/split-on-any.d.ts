@@ -1,0 +1,1 @@
+export { splitOnAny as default } from '../impls/$split-on-any/split-on-any';

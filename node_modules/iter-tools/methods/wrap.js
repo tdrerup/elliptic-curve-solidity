@@ -1,0 +1,1 @@
+module.exports = require('../impls/$wrap/wrap.js').wrap;

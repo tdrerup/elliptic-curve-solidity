@@ -1,0 +1,1 @@
+export { isAsyncIterable as default } from '../impls/is-async-iterable/is-async-iterable';

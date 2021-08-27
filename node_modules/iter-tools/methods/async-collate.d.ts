@@ -1,0 +1,1 @@
+export { asyncCollate as default } from '../impls/$collate/async-collate';

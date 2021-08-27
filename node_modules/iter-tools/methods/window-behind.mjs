@@ -1,0 +1,1 @@
+export { windowBehind as default } from '../impls/$window-behind/window-behind.js';

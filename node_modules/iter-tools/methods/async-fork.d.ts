@@ -1,0 +1,1 @@
+export { asyncFork as default } from '../impls/$fork/async-fork';

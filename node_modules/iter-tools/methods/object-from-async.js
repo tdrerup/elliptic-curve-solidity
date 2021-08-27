@@ -1,0 +1,1 @@
+module.exports = require('../impls/object-from-async/object-from-async.js').objectFromAsync;

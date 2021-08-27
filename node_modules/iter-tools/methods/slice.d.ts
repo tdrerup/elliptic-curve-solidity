@@ -1,0 +1,1 @@
+export { slice as default } from '../impls/$slice/slice';

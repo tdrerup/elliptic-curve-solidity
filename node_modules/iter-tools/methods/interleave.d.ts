@@ -1,0 +1,1 @@
+export { interleave as default } from '../impls/$interleave/interleave';

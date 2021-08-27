@@ -1,0 +1,1 @@
+module.exports = require('../impls/not-object/not-object.js').notObject;

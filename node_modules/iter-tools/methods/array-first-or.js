@@ -1,0 +1,1 @@
+module.exports = require('../impls/array-first-or/array-first-or.js').arrayFirstOr;

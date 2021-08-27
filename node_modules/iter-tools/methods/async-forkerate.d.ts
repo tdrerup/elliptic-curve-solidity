@@ -1,0 +1,1 @@
+export { asyncForkerate as default } from '../impls/$forkerate/async-forkerate';

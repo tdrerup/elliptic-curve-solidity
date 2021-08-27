@@ -1,0 +1,1 @@
+export { append as default } from '../impls/$append/append';

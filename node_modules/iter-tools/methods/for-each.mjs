@@ -1,0 +1,1 @@
+export { forEach as default } from '../impls/$for-each/for-each.js';

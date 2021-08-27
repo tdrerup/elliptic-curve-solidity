@@ -1,0 +1,1 @@
+module.exports = require('../impls/$first-or/async-first-or.js').__asyncFirstOr;

@@ -1,0 +1,1 @@
+export { asyncStartsWithSeq as default } from '../impls/$starts-with-seq/async-starts-with-seq.js';

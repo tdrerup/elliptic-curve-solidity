@@ -1,0 +1,1 @@
+export { concat as default } from '../impls/$concat/concat.js';

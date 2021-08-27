@@ -1,0 +1,1 @@
+module.exports = require('../impls/$tap/tap.js').tap;

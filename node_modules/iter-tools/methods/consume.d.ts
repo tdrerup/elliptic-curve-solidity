@@ -1,0 +1,1 @@
+export { consume as default } from '../impls/$consume/consume';

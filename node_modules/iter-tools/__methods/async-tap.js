@@ -1,0 +1,1 @@
+module.exports = require('../impls/$tap/async-tap.js').__asyncTap;

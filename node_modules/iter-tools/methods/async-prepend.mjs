@@ -1,0 +1,1 @@
+export { asyncPrepend as default } from '../impls/$prepend/async-prepend.js';

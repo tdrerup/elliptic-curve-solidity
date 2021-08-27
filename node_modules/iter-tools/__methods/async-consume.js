@@ -1,0 +1,1 @@
+module.exports = require('../impls/$consume/async-consume.js').__asyncConsume;

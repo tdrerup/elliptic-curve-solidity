@@ -1,0 +1,1 @@
+module.exports = require('../impls/$window-behind/window-behind.js').__windowBehind;

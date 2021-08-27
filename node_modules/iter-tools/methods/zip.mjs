@@ -1,0 +1,1 @@
+export { zip as default } from '../impls/$zip/zip.js';

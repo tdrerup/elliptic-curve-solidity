@@ -1,0 +1,5 @@
+function arrayLast(array) {
+  return array ? array[array.length - 1] : undefined;
+}
+
+exports.arrayLast = arrayLast;

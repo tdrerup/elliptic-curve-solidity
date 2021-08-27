@@ -1,0 +1,1 @@
+export { asyncTakeSorted as default } from '../impls/$take-sorted/async-take-sorted';

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$split/split.js').__split;

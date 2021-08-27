@@ -1,0 +1,1 @@
+export { deepEqual as default } from '../impls/$deep-equal/deep-equal';

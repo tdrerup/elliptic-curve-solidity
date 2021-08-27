@@ -1,0 +1,1 @@
+export { arrayReverse as default } from '../impls/array-reverse/array-reverse.js';

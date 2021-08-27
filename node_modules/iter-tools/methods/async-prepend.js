@@ -1,0 +1,1 @@
+module.exports = require('../impls/$prepend/async-prepend.js').asyncPrepend;

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$window/window.js').window;

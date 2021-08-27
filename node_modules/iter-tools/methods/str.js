@@ -1,0 +1,1 @@
+module.exports = require('../impls/$str/str.js').str;

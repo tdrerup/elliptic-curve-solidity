@@ -1,0 +1,1 @@
+export { splitGroups as default } from '../impls/$split-groups/split-groups.js';

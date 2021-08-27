@@ -1,0 +1,1 @@
+module.exports = require('../impls/$some/some.js').__some;

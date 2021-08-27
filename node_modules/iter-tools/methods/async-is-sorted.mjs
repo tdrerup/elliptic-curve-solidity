@@ -1,0 +1,1 @@
+export { asyncIsSorted as default } from '../impls/$is-sorted/async-is-sorted.js';

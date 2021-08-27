@@ -1,0 +1,1 @@
+module.exports = require('../impls/$fork/async-fork.js').__asyncFork;

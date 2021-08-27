@@ -1,0 +1,1 @@
+export { asyncAppend as default } from '../impls/$append/async-append';

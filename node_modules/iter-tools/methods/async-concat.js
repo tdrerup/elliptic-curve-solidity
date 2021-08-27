@@ -1,0 +1,1 @@
+module.exports = require('../impls/$concat/async-concat.js').asyncConcat;

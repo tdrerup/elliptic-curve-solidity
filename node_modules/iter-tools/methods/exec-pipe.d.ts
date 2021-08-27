@@ -1,0 +1,1 @@
+export { execPipe as default } from '../impls/exec-pipe/exec-pipe';

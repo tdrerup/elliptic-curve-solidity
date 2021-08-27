@@ -1,0 +1,1 @@
+module.exports = require('../impls/$to-object/async-to-object.js').asyncToObject;
