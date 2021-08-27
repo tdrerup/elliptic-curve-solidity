@@ -1,0 +1,1 @@
+export { asyncFirstOr as default } from '../impls/$first-or/async-first-or.js';

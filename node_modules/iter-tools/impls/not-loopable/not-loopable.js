@@ -1,0 +1,1 @@
+exports.notLoopable = require('../not-iterable/not-iterable.js').notIterable;

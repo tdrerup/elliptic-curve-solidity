@@ -1,0 +1,1 @@
+export { notLoopable as default } from '../impls/not-loopable/not-loopable.js';

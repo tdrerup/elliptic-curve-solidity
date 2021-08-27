@@ -1,0 +1,1 @@
+module.exports = require('../impls/is-null/is-null.js').isNull;

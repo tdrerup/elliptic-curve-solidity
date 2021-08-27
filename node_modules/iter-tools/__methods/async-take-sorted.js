@@ -1,0 +1,1 @@
+module.exports = require('../impls/$take-sorted/async-take-sorted.js').__asyncTakeSorted;

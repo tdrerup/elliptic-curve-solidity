@@ -1,0 +1,1 @@
+module.exports = require('../impls/$split-when/async-split-when.js').__asyncSplitWhen;

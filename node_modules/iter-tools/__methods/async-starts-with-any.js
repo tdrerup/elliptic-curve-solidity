@@ -1,0 +1,1 @@
+module.exports = require('../impls/$starts-with-any/async-starts-with-any.js').__asyncStartsWithAny;

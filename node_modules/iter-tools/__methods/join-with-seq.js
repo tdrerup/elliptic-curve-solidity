@@ -1,0 +1,1 @@
+module.exports = require('../impls/$join-with-seq/join-with-seq.js').__joinWithSeq;

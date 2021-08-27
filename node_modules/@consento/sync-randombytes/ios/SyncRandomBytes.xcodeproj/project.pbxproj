@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		163CDE472087CAD3001065FB /* SyncRandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EEC93E1BFE4B1D00D468EB /* SyncRandomBytes.m */; };
+		163CDE4A2087CAD3001065FB /* SyncRandomBytes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73EEC93C1BFE4B1D00D468EB /* SyncRandomBytes.h */; };
+		73EEC93D1BFE4B1D00D468EB /* SyncRandomBytes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73EEC93C1BFE4B1D00D468EB /* SyncRandomBytes.h */; };
+		73EEC93F1BFE4B1D00D468EB /* SyncRandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EEC93E1BFE4B1D00D468EB /* SyncRandomBytes.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		163CDE492087CAD3001065FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				163CDE4A2087CAD3001065FB /* SyncRandomBytes.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73EEC9371BFE4B1D00D468EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				73EEC93D1BFE4B1D00D468EB /* SyncRandomBytes.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		163CDE4E2087CAD3001065FB /* libSyncRandomBytes-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSyncRandomBytes-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73EEC9391BFE4B1D00D468EB /* libSyncRandomBytes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSyncRandomBytes.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		73EEC93C1BFE4B1D00D468EB /* SyncRandomBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncRandomBytes.h; sourceTree = "<group>"; };
+		73EEC93E1BFE4B1D00D468EB /* SyncRandomBytes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncRandomBytes.m; sourceTree = "<group>"; };
+		73EEC94A1BFE4B1D00D468EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		163CDE482087CAD3001065FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73EEC9361BFE4B1D00D468EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73EEC9301BFE4B1D00D468EB = {
+			isa = PBXGroup;
+			children = (
+				73EEC93C1BFE4B1D00D468EB /* SyncRandomBytes.h */,
+				73EEC93E1BFE4B1D00D468EB /* SyncRandomBytes.m */,
+				73EEC9481BFE4B1D00D468EB /* SyncRandomBytesTests */,
+				73EEC93A1BFE4B1D00D468EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73EEC93A1BFE4B1D00D468EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73EEC9391BFE4B1D00D468EB /* libSyncRandomBytes.a */,
+				163CDE4E2087CAD3001065FB /* libSyncRandomBytes-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73EEC9481BFE4B1D00D468EB /* SyncRandomBytesTests */ = {
+			isa = PBXGroup;
+			children = (
+				73EEC9491BFE4B1D00D468EB /* Supporting Files */,
+			);
+			path = SyncRandomBytesTests;
+			sourceTree = "<group>";
+		};
+		73EEC9491BFE4B1D00D468EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73EEC94A1BFE4B1D00D468EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		163CDE452087CAD3001065FB /* SyncRandomBytes-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 163CDE4B2087CAD3001065FB /* Build configuration list for PBXNativeTarget "SyncRandomBytes-tvOS" */;
+			buildPhases = (
+				163CDE462087CAD3001065FB /* Sources */,
+				163CDE482087CAD3001065FB /* Frameworks */,
+				163CDE492087CAD3001065FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SyncRandomBytes-tvOS";
+			productName = SyncRandomBytes;
+			productReference = 163CDE4E2087CAD3001065FB /* libSyncRandomBytes-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		73EEC9381BFE4B1D00D468EB /* SyncRandomBytes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73EEC94D1BFE4B1D00D468EB /* Build configuration list for PBXNativeTarget "SyncRandomBytes" */;
+			buildPhases = (
+				73EEC9351BFE4B1D00D468EB /* Sources */,
+				73EEC9361BFE4B1D00D468EB /* Frameworks */,
+				73EEC9371BFE4B1D00D468EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SyncRandomBytes;
+			productName = SyncRandomBytes;
+			productReference = 73EEC9391BFE4B1D00D468EB /* libSyncRandomBytes.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73EEC9311BFE4B1D00D468EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Tradle, Inc.";
+				TargetAttributes = {
+					73EEC9381BFE4B1D00D468EB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 73EEC9341BFE4B1D00D468EB /* Build configuration list for PBXProject "SyncRandomBytes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73EEC9301BFE4B1D00D468EB;
+			productRefGroup = 73EEC93A1BFE4B1D00D468EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73EEC9381BFE4B1D00D468EB /* SyncRandomBytes */,
+				163CDE452087CAD3001065FB /* SyncRandomBytes-tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		163CDE462087CAD3001065FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163CDE472087CAD3001065FB /* SyncRandomBytes.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73EEC9351BFE4B1D00D468EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73EEC93F1BFE4B1D00D468EB /* SyncRandomBytes.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		163CDE4C2087CAD3001065FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+			};
+			name = Debug;
+		};
+		163CDE4D2087CAD3001065FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+			};
+			name = Release;
+		};
+		73EEC94B1BFE4B1D00D468EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		73EEC94C1BFE4B1D00D468EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73EEC94E1BFE4B1D00D468EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		73EEC94F1BFE4B1D00D468EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		163CDE4B2087CAD3001065FB /* Build configuration list for PBXNativeTarget "SyncRandomBytes-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163CDE4C2087CAD3001065FB /* Debug */,
+				163CDE4D2087CAD3001065FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73EEC9341BFE4B1D00D468EB /* Build configuration list for PBXProject "SyncRandomBytes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73EEC94B1BFE4B1D00D468EB /* Debug */,
+				73EEC94C1BFE4B1D00D468EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73EEC94D1BFE4B1D00D468EB /* Build configuration list for PBXNativeTarget "SyncRandomBytes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73EEC94E1BFE4B1D00D468EB /* Debug */,
+				73EEC94F1BFE4B1D00D468EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73EEC9311BFE4B1D00D468EB /* Project object */;
+}

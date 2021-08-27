@@ -1,0 +1,1 @@
+module.exports = require('../impls/$forkerate/async-forkerate.js').asyncForkerate;

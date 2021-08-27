@@ -1,0 +1,1 @@
+export { when as default } from '../impls/when/when.js';

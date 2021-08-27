@@ -1,0 +1,1 @@
+export { splitOn as default } from '../impls/$split-on/split-on';

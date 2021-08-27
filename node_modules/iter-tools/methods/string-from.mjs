@@ -1,0 +1,1 @@
+export { stringFrom as default } from '../impls/string-from/string-from.js';

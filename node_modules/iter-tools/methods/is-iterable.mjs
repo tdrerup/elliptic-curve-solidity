@@ -1,0 +1,1 @@
+export { isIterable as default } from '../impls/is-iterable/is-iterable.js';

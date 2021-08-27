@@ -1,0 +1,1 @@
+export { asyncConcat as default } from '../impls/$concat/async-concat';

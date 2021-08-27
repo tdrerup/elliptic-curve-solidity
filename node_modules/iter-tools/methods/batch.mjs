@@ -1,0 +1,1 @@
+export { batch as default } from '../impls/$batch/batch.js';

@@ -1,0 +1,1 @@
+module.exports = require('../impls/array-last-or/array-last-or.js').arrayLastOr;

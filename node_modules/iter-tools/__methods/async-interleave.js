@@ -1,0 +1,1 @@
+module.exports = require('../impls/$interleave/async-interleave.js').__asyncInterleave;

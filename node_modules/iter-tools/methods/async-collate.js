@@ -1,0 +1,1 @@
+module.exports = require('../impls/$collate/async-collate.js').asyncCollate;

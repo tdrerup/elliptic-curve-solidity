@@ -1,0 +1,1 @@
+module.exports = require('../impls/is-async-iterable/is-async-iterable.js').isAsyncIterable;

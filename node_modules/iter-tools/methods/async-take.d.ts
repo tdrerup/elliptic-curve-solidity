@@ -1,0 +1,1 @@
+export { asyncTake as default } from '../impls/$take/async-take';

@@ -1,0 +1,1 @@
+export { asyncStartsWithAny as default } from '../impls/$starts-with-any/async-starts-with-any';

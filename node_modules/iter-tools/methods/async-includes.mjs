@@ -1,0 +1,1 @@
+export { asyncIncludes as default } from '../impls/$includes/async-includes.js';

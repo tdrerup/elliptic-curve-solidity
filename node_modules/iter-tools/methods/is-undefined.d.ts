@@ -1,0 +1,1 @@
+export { isUndefined as default } from '../impls/is-undefined/is-undefined';

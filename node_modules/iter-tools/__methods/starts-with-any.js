@@ -1,0 +1,1 @@
+module.exports = require('../impls/$starts-with-any/starts-with-any.js').__startsWithAny;

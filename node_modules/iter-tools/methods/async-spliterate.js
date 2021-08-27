@@ -1,0 +1,1 @@
+module.exports = require('../impls/$spliterate/async-spliterate.js').asyncSpliterate;

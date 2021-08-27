@@ -1,0 +1,1 @@
+export { asyncTakeWhile as default } from '../impls/$take-while/async-take-while.js';

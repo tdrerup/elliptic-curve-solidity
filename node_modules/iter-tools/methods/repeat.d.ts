@@ -1,0 +1,1 @@
+export { repeat as default } from '../impls/repeat/repeat';

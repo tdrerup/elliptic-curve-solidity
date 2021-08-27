@@ -1,0 +1,1 @@
+module.exports = require('../impls/$round-robin/async-round-robin.js').__asyncRoundRobin;

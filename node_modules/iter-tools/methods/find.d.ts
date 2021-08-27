@@ -1,0 +1,1 @@
+export { find as default } from '../impls/$find/find';

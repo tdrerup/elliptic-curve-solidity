@@ -1,0 +1,1 @@
+export { compress as default } from '../impls/$compress/compress';

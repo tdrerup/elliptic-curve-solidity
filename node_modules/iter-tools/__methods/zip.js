@@ -1,0 +1,1 @@
+module.exports = require('../impls/$zip/zip.js').__zip;

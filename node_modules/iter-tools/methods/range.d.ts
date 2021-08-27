@@ -1,0 +1,1 @@
+export { range as default } from '../impls/range/range';

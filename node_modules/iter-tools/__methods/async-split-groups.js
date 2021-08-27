@@ -1,0 +1,1 @@
+module.exports = require('../impls/$split-groups/async-split-groups.js').__asyncSplitGroups;

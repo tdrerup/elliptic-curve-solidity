@@ -1,0 +1,1 @@
+export { notAsyncWrappable as default } from '../impls/not-async-wrappable/not-async-wrappable';

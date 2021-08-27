@@ -1,0 +1,1 @@
+export { startsWithAny as default } from '../impls/$starts-with-any/starts-with-any.js';

@@ -1,0 +1,1 @@
+export { arrayLast as default } from '../impls/array-last/array-last';

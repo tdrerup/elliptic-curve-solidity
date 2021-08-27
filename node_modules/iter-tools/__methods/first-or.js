@@ -1,0 +1,1 @@
+module.exports = require('../impls/$first-or/first-or.js').__firstOr;

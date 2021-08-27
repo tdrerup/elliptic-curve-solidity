@@ -1,0 +1,1 @@
+module.exports = require('../impls/$some/async-some.js').__asyncSome;

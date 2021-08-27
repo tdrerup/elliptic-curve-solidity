@@ -1,0 +1,1 @@
+module.exports = require('../impls/apply/apply.js').__apply;

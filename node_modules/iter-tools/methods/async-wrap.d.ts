@@ -1,0 +1,1 @@
+export { asyncWrap as default } from '../impls/$wrap/async-wrap';

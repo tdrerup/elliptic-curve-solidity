@@ -1,0 +1,1 @@
+module.exports = require('../impls/$flat/flat.js').flat;

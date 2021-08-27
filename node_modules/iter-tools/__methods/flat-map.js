@@ -1,0 +1,1 @@
+module.exports = require('../impls/$flat-map/flat-map.js').__flatMap;

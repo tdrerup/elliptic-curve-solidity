@@ -1,0 +1,1 @@
+module.exports = require('../impls/$spliterate-grouped/spliterate-grouped.js').__spliterateGrouped;

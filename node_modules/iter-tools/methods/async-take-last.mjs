@@ -1,0 +1,1 @@
+export { asyncTakeLast as default } from '../impls/$take-last/async-take-last.js';

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$equal/equal.js').equal;

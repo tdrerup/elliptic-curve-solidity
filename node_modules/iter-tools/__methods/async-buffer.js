@@ -1,0 +1,1 @@
+module.exports = require('../impls/async-buffer/async-buffer.js').__asyncBuffer;

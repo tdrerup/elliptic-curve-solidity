@@ -1,0 +1,1 @@
+module.exports = require('../impls/$peekerate/async-peekerate.js').__asyncPeekerate;

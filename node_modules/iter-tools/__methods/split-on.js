@@ -1,0 +1,1 @@
+module.exports = require('../impls/$split-on/split-on.js').__splitOn;

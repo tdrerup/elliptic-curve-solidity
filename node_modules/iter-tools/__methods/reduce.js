@@ -1,0 +1,1 @@
+module.exports = require('../impls/$reduce/reduce.js').__reduce;

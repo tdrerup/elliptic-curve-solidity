@@ -1,0 +1,1 @@
+module.exports = require('../impls/range/range.js').__range;

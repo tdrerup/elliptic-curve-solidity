@@ -1,0 +1,1 @@
+module.exports = require('../impls/$zip/async-zip.js').asyncZip;

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$is-empty/is-empty.js').__isEmpty;

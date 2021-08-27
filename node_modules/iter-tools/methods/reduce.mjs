@@ -1,0 +1,1 @@
+export { reduce as default } from '../impls/$reduce/reduce.js';

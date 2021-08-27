@@ -1,0 +1,1 @@
+export { isObject as default } from '../impls/is-object/is-object';

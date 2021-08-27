@@ -1,0 +1,1 @@
+module.exports = require('../impls/$window/async-window.js').asyncWindow;

@@ -1,0 +1,1 @@
+module.exports = require('../impls/string-from-async/string-from-async.js').stringFromAsync;

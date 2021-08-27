@@ -1,0 +1,1 @@
+export { isNil as default } from '../impls/is-nil/is-nil.js';

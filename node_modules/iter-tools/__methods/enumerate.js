@@ -1,0 +1,1 @@
+module.exports = require('../impls/$enumerate/enumerate.js').__enumerate;

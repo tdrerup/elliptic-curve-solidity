@@ -1,0 +1,1 @@
+module.exports = require('../impls/is-async-loopable/is-async-loopable.js').isAsyncLoopable;

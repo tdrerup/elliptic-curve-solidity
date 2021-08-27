@@ -1,0 +1,1 @@
+module.exports = require('../impls/get-size/get-size.js').getSize;

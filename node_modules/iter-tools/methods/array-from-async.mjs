@@ -1,0 +1,1 @@
+export { arrayFromAsync as default } from '../impls/array-from-async/array-from-async.js';

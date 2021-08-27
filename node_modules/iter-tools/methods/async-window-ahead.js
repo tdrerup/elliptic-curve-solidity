@@ -1,0 +1,1 @@
+module.exports = require('../impls/$window-ahead/async-window-ahead.js').asyncWindowAhead;

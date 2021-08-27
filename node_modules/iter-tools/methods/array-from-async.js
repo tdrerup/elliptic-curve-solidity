@@ -1,0 +1,1 @@
+module.exports = require('../impls/array-from-async/array-from-async.js').arrayFromAsync;

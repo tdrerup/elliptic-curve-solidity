@@ -1,0 +1,1 @@
+export { spliterate as default } from '../impls/$spliterate/spliterate.js';

@@ -1,0 +1,1 @@
+module.exports = require('../impls/not-async-wrappable/not-async-wrappable.js').notAsyncWrappable;

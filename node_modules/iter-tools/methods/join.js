@@ -1,0 +1,1 @@
+module.exports = require('../impls/$join/join.js').join;

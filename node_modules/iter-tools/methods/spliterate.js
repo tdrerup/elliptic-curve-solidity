@@ -1,0 +1,1 @@
+module.exports = require('../impls/$spliterate/spliterate.js').spliterate;

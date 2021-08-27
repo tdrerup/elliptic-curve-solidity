@@ -1,0 +1,1 @@
+module.exports = require('../impls/$take-last/async-take-last.js').asyncTakeLast;

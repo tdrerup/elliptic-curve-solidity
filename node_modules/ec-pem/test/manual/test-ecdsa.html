@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>ECDSA Test</title>
+  <script>
+    function signedData(namedCurve='P-256') {
+      return genSignedData(namedCurve)
+        .then(src => verifySignedData(src)
+          .then(ver => [src, ver])) }
+
+    async function genSignedData(namedCurve='P-256') {
+      const {privateKey, publicKey} = await crypto.subtle.generateKey(
+        { name: 'ECDSA', namedCurve }, false, ["sign", "verify"])
+
+      const publicKey_hex = pack_hex( await crypto.subtle.exportKey('raw', publicKey) )
+      const examples = await Promise.all([
+        [],
+        [ 0x41, 0x42, 0x43, 0x44 ],
+        [ 1, 9, 4, 2 ],
+      ].map(execExamples))
+
+      return { namedCurve, publicKey_hex, examples }
+
+      async function execExamples(data) {
+        const u8 = new Uint8Array(data).buffer
+        return {data,
+          sha_1: pack_hex( await crypto.subtle.digest({name: 'SHA-1'}, u8) ),
+          sig_1: pack_hex( await crypto.subtle.sign(
+            {name: 'ECDSA', hash: {name: 'SHA-1'}}, privateKey, u8) ),
+          sig_256: pack_hex( await crypto.subtle.sign(
+            {name: 'ECDSA', hash: {name: 'SHA-256'}}, privateKey, u8) ),
+          sig_384: pack_hex( await crypto.subtle.sign(
+            {name: 'ECDSA', hash: {name: 'SHA-384'}}, privateKey, u8) ),
+          sig_512: pack_hex( await crypto.subtle.sign(
+            {name: 'ECDSA', hash: {name: 'SHA-512'}}, privateKey, u8) ),
+        }
+      }
+    }
+
+    async function verifySignedData({namedCurve, publicKey_hex, examples}) {
+      const publicKey = await crypto.subtle.importKey(
+        'raw', unpack_hex(publicKey_hex),
+        { name: 'ECDSA', namedCurve }, false, ["verify"])
+
+      const verified = await Promise.all(examples.map(execVerify))
+      const all_verified = verified.every(e => true === e.all)
+      return { namedCurve, publicKey_hex, verified, all_verified }
+
+      async function execVerify({data, sha_1, sig_1, sig_256, sig_384, sig_512}) {
+        const u8 = new Uint8Array(data).buffer
+        const res = {
+          sha_1: sha_1.toLowerCase() == pack_hex( await crypto.subtle.digest({name: 'SHA-1'}, u8)).toLowerCase(),
+          sig_1: await crypto.subtle.verify(
+            {name: 'ECDSA', hash: {name: 'SHA-1'}}, publicKey, unpack_hex(sig_1), u8),
+          sig_256: await crypto.subtle.verify(
+            {name: 'ECDSA', hash: {name: 'SHA-256'}}, publicKey, unpack_hex(sig_256), u8),
+          sig_384: await crypto.subtle.verify(
+            {name: 'ECDSA', hash: {name: 'SHA-384'}}, publicKey, unpack_hex(sig_384), u8),
+          sig_512: await crypto.subtle.verify(
+            {name: 'ECDSA', hash: {name: 'SHA-512'}}, publicKey, unpack_hex(sig_512), u8),
+        }
+        res.all = Object.values(res).every(v => true === v)
+        return res
+      }
+    }
+
+    function pack_hex(arr) {
+      const u8 = new Uint8Array(arr.buffer || arr)
+      return Array.from(u8, v => (v < 16 ? '0' : '')+v.toString(16)).join('') }
+
+    function unpack_hex(hex) {
+      const arr = hex.match(/[0-9a-fA-F]{2}/g).map(b => parseInt(b, 16))
+      return new Uint8Array(arr).buffer }
+
+  </script>
+</head>
+
+<body>
+  <h3>Browser Source</h3>
+  <a id='elem_download' download='data.browser.json'>Download</a>
+
+  <h3 >Verification <b id='elem_status'></b></h3>
+  <pre id='elem_ver'></pre>
+  <h3>Challenge</h3>
+  <pre id='elem_src'></pre>
+</body>
+<script>
+  const json_pprint = o => JSON.stringify(o,null,2)
+
+  Promise.all([
+    genSignedData('P-256'),
+    genSignedData('P-384'),
+    genSignedData('P-521'),
+  ]).then(json_pprint)
+  .then(json => {
+    window.elem_download.href = URL.createObjectURL(
+      new Blob([json], {type: "application/json"}) )
+  })
+</script>
+<script>
+  async function run_ecdsa_tests_for_nodejs_data(testsuite) {
+    window.elem_src.appendChild(
+      document.createTextNode(
+        JSON.stringify(testsuite, null, 2) ) )
+
+    const ver = await Promise.all(testsuite.map(verifySignedData))
+
+    window.elem_ver.appendChild(
+      document.createTextNode(
+        JSON.stringify(ver, null, 2) ) )
+
+    const all_verified = ver.every(e => true === e.all_verified)
+    window.elem_status.style.background = all_verified ? '#88ff88' : '#ff8888'
+    window.elem_status.appendChild(
+      document.createTextNode(
+        all_verified ? '-- passed --' : '-- failed --' ) )
+  }
+</script>
+<script src='./data.nodejs.js'></script>
+</html>

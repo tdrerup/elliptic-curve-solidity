@@ -1,0 +1,1 @@
+module.exports = require('../impls/$spliterate-grouped/async-spliterate-grouped.js').__asyncSpliterateGrouped;

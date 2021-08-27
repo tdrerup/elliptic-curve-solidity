@@ -1,0 +1,1 @@
+module.exports = require('../impls/$reverse/async-reverse.js').__asyncReverse;

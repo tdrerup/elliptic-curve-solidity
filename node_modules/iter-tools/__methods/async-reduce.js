@@ -1,0 +1,1 @@
+module.exports = require('../impls/$reduce/async-reduce.js').__asyncReduce;

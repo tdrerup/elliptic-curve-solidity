@@ -1,0 +1,1 @@
+module.exports = require('../impls/$is-empty/async-is-empty.js').asyncIsEmpty;

@@ -1,0 +1,1 @@
+export { toArray as default } from '../impls/$to-array/to-array.js';

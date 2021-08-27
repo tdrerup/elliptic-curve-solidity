@@ -1,0 +1,1 @@
+module.exports = require('../impls/$drop-while/async-drop-while.js').asyncDropWhile;

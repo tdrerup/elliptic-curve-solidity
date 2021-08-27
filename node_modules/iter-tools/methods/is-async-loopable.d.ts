@@ -1,0 +1,1 @@
+export { isAsyncLoopable as default } from '../impls/is-async-loopable/is-async-loopable';

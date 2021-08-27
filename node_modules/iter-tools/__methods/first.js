@@ -1,0 +1,1 @@
+module.exports = require('../impls/$first/first.js').__first;

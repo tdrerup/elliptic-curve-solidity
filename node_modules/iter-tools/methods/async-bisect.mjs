@@ -1,0 +1,1 @@
+export { asyncBisect as default } from '../impls/$bisect/async-bisect.js';

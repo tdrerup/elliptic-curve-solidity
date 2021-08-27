@@ -1,0 +1,1 @@
+module.exports = require('../impls/$compress/compress.js').__compress;

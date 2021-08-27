@@ -1,0 +1,1 @@
+module.exports = require('../impls/$batch/async-batch.js').asyncBatch;

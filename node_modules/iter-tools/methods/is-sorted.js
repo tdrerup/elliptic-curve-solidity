@@ -1,0 +1,1 @@
+module.exports = require('../impls/$is-sorted/is-sorted.js').isSorted;

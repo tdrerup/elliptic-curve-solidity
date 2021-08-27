@@ -1,0 +1,1 @@
+export { notUndefined as default } from '../impls/not-undefined/not-undefined.js';

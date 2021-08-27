@@ -1,0 +1,1 @@
+module.exports = require('../impls/$interpose/interpose.js').__interpose;

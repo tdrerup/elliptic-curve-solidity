@@ -1,0 +1,1 @@
+module.exports = require('../impls/$every/async-every.js').__asyncEvery;

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$enumerate/async-enumerate.js').__asyncEnumerate;

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$take-while/async-take-while.js').asyncTakeWhile;

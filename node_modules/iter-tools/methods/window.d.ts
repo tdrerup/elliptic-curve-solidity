@@ -1,0 +1,1 @@
+export { window as default } from '../impls/$window/window';

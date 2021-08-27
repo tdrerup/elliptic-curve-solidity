@@ -1,0 +1,1 @@
+export { isWrappable as default } from '../impls/is-wrappable/is-wrappable';

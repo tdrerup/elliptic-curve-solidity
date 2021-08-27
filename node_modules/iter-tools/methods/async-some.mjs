@@ -1,0 +1,1 @@
+export { asyncSome as default } from '../impls/$some/async-some.js';

@@ -1,0 +1,1 @@
+export { asyncEnumerate as default } from '../impls/$enumerate/async-enumerate.js';

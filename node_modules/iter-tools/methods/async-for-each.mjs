@@ -1,0 +1,1 @@
+export { asyncForEach as default } from '../impls/$for-each/async-for-each.js';

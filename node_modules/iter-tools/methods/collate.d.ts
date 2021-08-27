@@ -1,0 +1,1 @@
+export { collate as default } from '../impls/$collate/collate';

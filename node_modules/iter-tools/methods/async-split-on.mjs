@@ -1,0 +1,1 @@
+export { asyncSplitOn as default } from '../impls/$split-on/async-split-on.js';

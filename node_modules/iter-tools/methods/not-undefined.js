@@ -1,0 +1,1 @@
+module.exports = require('../impls/not-undefined/not-undefined.js').notUndefined;

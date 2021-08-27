@@ -1,0 +1,1 @@
+module.exports = require('../impls/$cycle/cycle.js').cycle;

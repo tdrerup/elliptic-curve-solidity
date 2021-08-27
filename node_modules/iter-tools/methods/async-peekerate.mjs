@@ -1,0 +1,1 @@
+export { asyncPeekerate as default } from '../impls/$peekerate/async-peekerate.js';

@@ -1,0 +1,1 @@
+module.exports = require('../impls/object-from/object-from.js').objectFrom;

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$starts-with-seq/starts-with-seq.js').startsWithSeq;

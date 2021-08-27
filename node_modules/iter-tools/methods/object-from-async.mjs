@@ -1,0 +1,1 @@
+export { objectFromAsync as default } from '../impls/object-from-async/object-from-async.js';

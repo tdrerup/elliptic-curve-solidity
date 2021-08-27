@@ -1,0 +1,1 @@
+export { asyncFlat as default } from '../impls/$flat/async-flat';

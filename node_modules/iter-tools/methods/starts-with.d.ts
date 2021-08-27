@@ -1,0 +1,1 @@
+export { startsWith as default } from '../impls/$starts-with/starts-with';

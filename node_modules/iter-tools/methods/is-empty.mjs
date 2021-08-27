@@ -1,0 +1,1 @@
+export { isEmpty as default } from '../impls/$is-empty/is-empty.js';

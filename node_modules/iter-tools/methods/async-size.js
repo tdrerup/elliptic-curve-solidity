@@ -1,0 +1,1 @@
+module.exports = require('../impls/$size/async-size.js').asyncSize;

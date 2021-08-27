@@ -1,0 +1,1 @@
+export { zipAll as default } from '../impls/$zip-all/zip-all.js';

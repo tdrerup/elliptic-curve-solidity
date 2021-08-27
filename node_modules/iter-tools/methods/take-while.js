@@ -1,0 +1,1 @@
+module.exports = require('../impls/$take-while/take-while.js').takeWhile;

@@ -1,0 +1,1 @@
+module.exports = require('../impls/$batch/batch.js').__batch;

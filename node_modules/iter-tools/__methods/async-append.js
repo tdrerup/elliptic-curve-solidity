@@ -1,0 +1,1 @@
+module.exports = require('../impls/$append/async-append.js').__asyncAppend;

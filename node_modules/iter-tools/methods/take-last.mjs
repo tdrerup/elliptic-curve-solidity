@@ -1,0 +1,1 @@
+export { takeLast as default } from '../impls/$take-last/take-last.js';

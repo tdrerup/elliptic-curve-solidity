@@ -1,0 +1,1 @@
+module.exports = require('../impls/not-wrappable/not-wrappable.js').notWrappable;

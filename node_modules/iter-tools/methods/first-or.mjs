@@ -1,0 +1,1 @@
+export { firstOr as default } from '../impls/$first-or/first-or.js';

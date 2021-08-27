@@ -1,0 +1,1 @@
+export { filter as default } from '../impls/$filter/filter';

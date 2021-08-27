@@ -1,0 +1,1 @@
+module.exports = require('../impls/$compress/async-compress.js').__asyncCompress;

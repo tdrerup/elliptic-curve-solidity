@@ -1,0 +1,1 @@
+module.exports = require('../impls/exec-pipe/exec-pipe.js').execPipe;

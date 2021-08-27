@@ -1,0 +1,1 @@
+export { asyncJoin as default } from '../impls/$join/async-join';

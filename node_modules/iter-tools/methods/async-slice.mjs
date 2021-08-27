@@ -1,0 +1,1 @@
+export { asyncSlice as default } from '../impls/$slice/async-slice.js';

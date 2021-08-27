@@ -1,0 +1,6 @@
+{
+  "preserve": {
+    "tag": "filecoin",
+    "recipe": "."
+  }
+}

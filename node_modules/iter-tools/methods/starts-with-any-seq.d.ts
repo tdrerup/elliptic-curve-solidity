@@ -1,0 +1,1 @@
+export { startsWithAnySeq as default } from '../impls/$starts-with-any-seq/starts-with-any-seq';

@@ -1,0 +1,1 @@
+export { asyncDrop as default } from '../impls/$drop/async-drop.js';
