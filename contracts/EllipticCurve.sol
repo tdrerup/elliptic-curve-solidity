@@ -370,4 +370,18 @@ contract EllipticCurve {
 
         return Px % n == rs[0];
     }
+
+    function validateSignature(
+        bytes32 message,
+        bytes calldata signature,
+        bytes calldata publicKey
+    ) public pure returns (bool) {
+        uint[2] memory rs;
+        uint[2] memory Q;
+
+        (rs[0], rs[1]) = abi.decode(signature, (uint, uint));
+        (Q[0], Q[1]) = abi.decode(publicKey, (uint, uint));
+
+        return validateSignature(message, rs, Q);
+    }
 }

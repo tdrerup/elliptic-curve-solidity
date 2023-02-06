@@ -1,5 +1,6 @@
 // Tilman Drerup (2018).
 
+import { utils } from "ethers"
 import { ethers } from "hardhat"
 import crypto from "crypto"
 import ecPem from "ec-pem"
@@ -10,7 +11,11 @@ describe("EllipticCurve", async () => {
     let curve
     let messageHash
     let publicKey
+    let publicKeyArray
     let signature
+    let signatureArray
+
+    const abiCoder = new utils.AbiCoder()
 
     beforeEach(async () => {
         // Create contract.
@@ -23,7 +28,8 @@ describe("EllipticCurve", async () => {
 
         // Reformat keys.
         const pemFormattedKeyPair = ecPem(prime256v1, "prime256v1")
-        publicKey = [
+        publicKey = "0x" + prime256v1.getPublicKey("hex").substring(2)
+        publicKeyArray = [
             "0x" + prime256v1.getPublicKey("hex").slice(2, 66),
             "0x" + prime256v1.getPublicKey("hex").slice(-64),
         ]
@@ -44,7 +50,8 @@ describe("EllipticCurve", async () => {
         // @ts-ignore
         const xlength = 2 * ("0x" + sigString.slice(6, 8))
         sigString = sigString.slice(8)
-        signature = ["0x" + sigString.slice(0, xlength), "0x" + sigString.slice(xlength + 4)]
+        signatureArray = ["0x" + sigString.slice(0, xlength), "0x" + sigString.slice(xlength + 4)]
+        signature = abiCoder.encode(["uint256", "uint256"], [signatureArray[0], signatureArray[1]])
     })
 
     it("confirm that a valid point is on the curve", async () => {
@@ -64,24 +71,49 @@ describe("EllipticCurve", async () => {
     })
 
     it("confirm valid signature (#1)", async () => {
-        const result = await curve.validateSignature(messageHash, signature, publicKey)
-        console.log(result)
+        const result = await curve["validateSignature(bytes32,uint256[2],uint256[2])"](
+            messageHash,
+            signatureArray,
+            publicKeyArray
+        )
+        assert.equal(result, true)
     })
 
     it("confirm valid signature (#2)", async () => {
-        const result = await curve.validateSignature(messageHash, signature, publicKey)
+        const result = await curve["validateSignature(bytes32,uint256[2],uint256[2])"](
+            messageHash,
+            signatureArray,
+            publicKeyArray
+        )
+        assert.equal(result, true)
+    })
+
+    it("confirm valid signature (#3)", async () => {
+        const result = await curve["validateSignature(bytes32,bytes,bytes)"](
+            messageHash,
+            signature,
+            publicKey
+        )
         assert.equal(result, true)
     })
 
     it("reject signature with flipped public key coordinates ([x,y] >> [y,x])", async () => {
-        const flippedPublicKey = [publicKey[1], publicKey[0]]
-        const result = await curve.validateSignature(messageHash, signature, flippedPublicKey)
+        const flippedPublicKey = [publicKeyArray[1], publicKeyArray[0]]
+        const result = await curve["validateSignature(bytes32,uint256[2],uint256[2])"](
+            messageHash,
+            signatureArray,
+            flippedPublicKey
+        )
         assert.equal(result, false)
     })
 
     it("reject signature with flipped signature values ([r,s] >> [s,r])", async () => {
-        const flippedSignature = [signature[1], signature[0]]
-        const result = await curve.validateSignature(messageHash, flippedSignature, publicKey)
+        const flippedSignature = [signatureArray[1], signatureArray[0]]
+        const result = await curve["validateSignature(bytes32,uint256[2],uint256[2])"](
+            messageHash,
+            flippedSignature,
+            publicKeyArray
+        )
         assert.equal(result, false)
     })
 
@@ -92,7 +124,11 @@ describe("EllipticCurve", async () => {
             .substring(0, 5)
         const invalidMessageHash = bufferToHex(sha256(Buffer.from(invalidMessage)))
 
-        const result = await curve.validateSignature(invalidMessageHash, signature, publicKey)
+        const result = await curve["validateSignature(bytes32,uint256[2],uint256[2])"](
+            invalidMessageHash,
+            signatureArray,
+            publicKeyArray
+        )
         assert.equal(result, false)
     })
 })
