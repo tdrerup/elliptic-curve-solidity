@@ -1,0 +1,14 @@
+abi/
+artifacts/
+cache/
+coverage/
+exports/
+node_modules/
+typechain/
+package-lock.json
+coverage.json
+.env
+.DS_Store
+/deployments/*/.chainId
+/deployments/*/solcInputs
+/.env
