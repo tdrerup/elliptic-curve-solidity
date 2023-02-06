@@ -27,6 +27,7 @@
         "@types/chai": "^4.3.0",
         "@types/mocha": "^9.0.0",
         "chai": "^4.3.6",
+        "ec-pem": "^0.18.0",
         "ethers": "^5.7.1",
         "hardhat": "^2.11.2",
         "hardhat-contract-sizer": "^2.4.0",
