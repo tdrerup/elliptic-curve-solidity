@@ -95,7 +95,7 @@ contract EllipticCurve {
     function zeroProj() public pure
         returns (uint x, uint y, uint z)
     {
-        return (0, 1, 0);
+        return (0, 0, 1);
     }
 
     /**
@@ -297,7 +297,7 @@ contract EllipticCurve {
         uint base2Y = y0;
         uint base2Z = 1;
 
-        for(uint i = 0; i < exp; i++) {
+        for(uint i = 0; i < exp; ++i) {
             (base2X, base2Y, base2Z) = twiceProj(base2X, base2Y, base2Z);
         }
 
@@ -327,7 +327,7 @@ contract EllipticCurve {
         x1 = x0;
         y1 = y0;
 
-        if(scalar%2 == 0) {
+        if(scalar & 1 == 0) {
             x1 = y1 = 0;
         }
 
@@ -336,7 +336,7 @@ contract EllipticCurve {
         while(scalar > 0) {
             (base2X, base2Y, base2Z) = twiceProj(base2X, base2Y, base2Z);
 
-            if(scalar%2 == 1) {
+            if(scalar & 1 == 1) {
                 (x1, y1, z1) = addProj(base2X, base2Y, base2Z, x1, y1, z1);
             }
 
@@ -374,19 +374,14 @@ contract EllipticCurve {
         uint x2;
         uint y1;
         uint y2;
+        uint px;
+        uint py;
 
         uint sInv = inverseMod(rs[1], n);
         (x1, y1) = multiplyScalar(gx, gy, mulmod(uint(message), sInv, n));
         (x2, y2) = multiplyScalar(Q[0], Q[1], mulmod(rs[0], sInv, n));
-        uint[3] memory P = addAndReturnProjectivePoint(x1, y1, x2, y2);
+        (px, py) = add(x1, y1, x2, y2);
 
-        if (P[2] == 0) {
-            return false;
-        }
-
-        uint Px = inverseMod(P[2], p);
-        Px = mulmod(P[0], mulmod(Px, Px, p), p);
-
-        return Px % n == rs[0];
+        return px == rs[0];
     }
 }
